@@ -12,7 +12,7 @@
 
 {% if blogs2|length != 0 %}
 
-<h2 style="background-color:Yellow">Blogs posts of {{blog_user}}:</h2>
+<h2 style="background-color:Yellow">Blogs posts of {{blog_user}} has {{blogs2|length}} blogs </h2>
 
  {% for blog in blogs2 %}
    <div style="background-color:darkturquoise">
@@ -23,7 +23,7 @@
 {% endif %}
 
 {% if blogs2|length == 0 %}
-<p> No blogs Yet</p>
+<p><strong> No blogs Yet for {{blog_user}}</strong> </p>
 {% endif %}
 
 {% endblock %}
